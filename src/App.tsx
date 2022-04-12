@@ -7,9 +7,7 @@ import { Difficulty } from './API';
 
 const TOTAL_QUESTIONS = 10;
 
-function App() {
-
-  const startTrivia = async () => {
+  const App = () => {
     const [loading, setLoading] = useState(false);
     const [questions, setQuestions] = useState([]);
     const [number, setNumber] = useState(0);
@@ -19,19 +17,13 @@ function App() {
 
     console.log(fetchQuizQuestions(TOTAL_QUESTIONS, Difficulty.EASY));
 
+    const startTrivia = async () => {};  
 
-  }
+    const checkAnswer = (e: React.MouseEvent<HTMLButtonElement>) => {};
 
-  const checkAnswer = (e: React.MouseEvent<HTMLButtonElement>) => {
+    const nextQuestion = () => {};  
 
-  }
-
-  const nextQuestion = () => {
-
-    
-  }
-
-  return (
+    return (
     <div className="App">
       <h1>REACT QUIZ</h1>
       <button className='start' onClick={startTrivia}>
